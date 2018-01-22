@@ -1,0 +1,51 @@
+---
+sitename: AI5LE
+sitedesc: Web & Mobile App Development
+project:
+    -
+        title: Web Fast Insurance
+        img1: client-webfast.png
+        img1-desc: This is the description
+        img2: client-webfast-2.png
+        img2-desc: This is image 2
+        img3: client-webfast.png
+        img3-desc: This is 3.
+        summary: This is the summary
+    -
+        title: The Standard Management Services
+        img1: client-webfast.png
+        img1-desc: This is the description
+        img2: client-webfast.png
+        img2-desc: This is image 2
+        img3: client-webfast.png
+        img3-desc: This is 3.
+        summary: This is the summary of the sms.
+    -
+        title: Berenson Oncology
+        img1: client-berensononcology-1.png
+        img1-desc: This is the description
+        img2: client-berensononcology-2.png
+        img2-desc: This is image 2
+        img3: client-berensononcology-3.png
+        img3-desc: This is 3.
+        summary: This is the summary of the sms. 
+        categories: CMS/WordPress Integration, Existing Site Redesign, Photography, Content Creation, Maintenance.       
+    -
+        title: HollywoodHotSpot.net
+        img1: client-hwhs-1.png
+        img1-desc: This is the description
+        img2: client-hwhs-2.png
+        img2-desc: This is image 2
+        img3: client-hwhs-3.png
+        img3-desc: This is 3.
+        summary: This is the summary of the sms.
+    -
+        title: The Standard Management Services
+        img1: client-webfast.png
+        img1-desc: This is the description
+        img2: client-webfast.png
+        img2-desc: This is image 2
+        img3: client-webfast.png
+        img3-desc: This is 3.
+        summary: This is the summary of the sms.        
+

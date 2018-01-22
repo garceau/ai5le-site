@@ -1,0 +1,87 @@
+
+.top-bar img {
+    max-height: 45px;
+}
+
+body {
+    background: map-get($colors, background);
+    font-family: $font-sans-serif;
+    font-size: $font-size;
+    color: #fafafa;
+    .off-canvas {
+        background: map-get($colors, background);
+        a {
+            color: #108CFF;
+             &:hover {
+                background: map-get($colors, primary);
+            }
+        }
+        &>ul>li:hover {
+            a {
+                &:hover {
+                    background: map-get($colors, primary);
+                    color: #000;
+                }
+            }
+        }
+    }
+    .top-bar,
+    .top-bar ul {
+        background: map-get($colors, background);
+        a {
+            color: $primary-color;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .top-bar img {
+        max-height: 45px;
+    }
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        &>* {
+            flex: 1;
+        }
+        &-center {
+            flex: 2;
+            >ul {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+.callout {
+    background: map-get($colors, secondary);
+
+}
+
+section#ft-reg, .callout {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+
+.close {
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-coffee {
+    color: darken(beige,30%);
+}
+.fa-code {
+    color: rgb(189, 108, 247);
+}
+
+.text-white {
+    color: white;
+}

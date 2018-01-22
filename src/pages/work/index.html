@@ -1,0 +1,39 @@
+---
+page-title: Our Work
+---
+
+
+ {{#each data.project}}
+<div class="row project">
+        <div class="details column large-4 medium-6 small-12">
+        <h3><span>Project: </span>{{title}}</h3>
+        <p class="lead"><b><span>Categories:</span> </b>{{categories}}</p>
+        </div>
+    <div class="column large-8 medium-6 small-12">
+       
+        <div class="orbit" role="region" aria-label="{{title}}" data-orbit data-use-m-u-i="false">
+           <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/work/{{img1}}" alt="{{img3-desc}}">
+                        <figcaption class="orbit-caption">{{img1-desc}}</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/work/{{img2}}" alt="{{img3-desc}}">
+                        <figcaption class="orbit-caption">{{img2-desc}}</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/work/{{img3}}" alt="{{img3-desc}}">
+                        <figcaption class="orbit-caption">{{img3-desc}}</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+        </div>
+        {{/each}}

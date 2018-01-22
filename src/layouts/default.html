@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{#if page-title}}{{ page-title }} &middot; {{/if}}{{ data.site-name }} &middot; {{ data.site-desc }}</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <link rel="stylesheet" href="{{root}}assets/fonts/foundation-icons.css">
+  <link rel="stylesheet" href="{{root}}assets/css/font-awesome.css">
+</head>
+<body class="light">
+
+<div class="off-canvas-wrapper">
+
+{{>off-canvas }}
+<div class="off-canvas-content" data-off-canvas-content>
+{{> top-bar }}
+{{#if page-title }}{{> page-title }} {{/if}}
+{{> body}}
+{{> footer }}
+    </div><!-- end off-canvas-content -->
+  </div><!-- end off-canvas-wrapper -->
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

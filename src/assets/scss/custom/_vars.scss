@@ -1,0 +1,60 @@
+// Colors
+$colors: (
+    primary: #208fff,
+    secondary: #1c4dc0,
+    color: #fff,
+    background: #202731,
+    link: #39464e,
+    link-hover: #0084ff,
+    success: green,
+    alert: orange,
+    note: lightyellow,
+    warning: tomato,
+);
+
+$background-color: map-get($colors, background);
+$primary-color: map-get($colors, primary); 
+$colour1: #39464E; 
+$colour2: #1C222B; 
+$colour3: #F6F6F7; 
+$colour4: #ABB9C2; 
+$colour5: #0084FF; 
+$colour6: #7F94A1; 
+$colour7: #F36E65; 
+$colour8: #F3F5F6; 
+$colour9: #FACED1; 
+$colour10: #BDE2D9; 
+$colour11: #FF4F68; 
+$colour12: #F8B068; 
+$colour13: #F5EEA2; 
+$colour14: #2D343D; 
+$colour15: #6CE890; 
+$colour16: #7561FF; 
+$colour17: #ED6E55; 
+$colour18: #249D7F; 
+$colour19: #F4F6F6; 
+$colour20: #CFD6D9; 
+$colour21: #7F7F7F; 
+$colour22: #FBFBFB; 
+$colour23: #00ADC4; 
+$colour24: #CE363D; 
+
+$font-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$font-serif: 'Roboto Mono';
+$font-size: 14px;
+
+$max-body-width: 1200;
+$max-columns: 12;
+
+$one: percentage( 01 / 12 );
+$two: percentage( 02 / 12 );
+$three: percentage( 03 / 12 );
+$four: percentage( 04 / 12 );
+$five: percentage( 05 / 12 );
+$six: percentage( 06 / 12 );
+$seven: percentage( 07 / 12 );
+$eight: percentage( 08 / 12 );
+$nine: percentage( 09 / 12 );
+$ten: percentage( 10 / 12 );
+$eleven: percentage( 11 / 12 );
+$twelve: percentage( 12 / 12 );

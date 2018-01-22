@@ -1,0 +1,217 @@
+    @import 'custom/vars';
+    @import 'custom/mixins';
+    @import 'custom/settings';
+    #process .row {
+        position: relative;
+        h3 {
+            text-transform: uppercase;
+            span {
+                color: #123;
+            }
+        }
+    }
+
+    #process-nav {
+        li {
+            font-size: 20px;
+            border-bottom: 1px solid #345;
+            border-top: 1px solid #012;
+            a.is-active {
+                color: #fff;
+                &::before {
+                    content: "- ";
+                    left: -15px;
+                    position: absolute;
+                }
+            }
+        }
+        li:nth-of-type(1) {
+            border-bottom: 1px solid #345;
+            border-top: 1px solid transparent;
+        }
+    }
+
+    #discovery,
+    #design,
+    #develop,
+    #debug,
+    #deploy {
+        padding: 1em;
+        padding-top: 2em;
+        margin-top: 4em;
+        margin-bottom: 3em;
+        min-height: 200px;
+        position: relative;
+        top: 10px;
+        h3 {
+            color: #aaa;
+        }
+        p {
+            color: #aaa;
+        }
+        &::before {
+            position: absolute;
+            left: -133px;
+            font-family: 'Foundation-Icons';
+            color: #000;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+            font-size: 100px;
+            opacity: .6;
+            @media screen and (max-width: 50em) {
+                display: none;
+            }
+        }
+    }
+
+    #discovery {
+        margin-top: 6em;
+        background: $primary-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #000;
+        }
+        &::before {
+            content: "\f133";
+        }
+    }
+
+    #design {
+        background: lighten(map-get($colors, link), 10%);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #000;
+        }
+        &::before {
+            content: "\f044";
+            font-family: 'FontAwesome';
+        }
+    }
+
+    #develop {
+        background: $secondary-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #000;
+        }
+        &::before {
+            content: "\f136";
+        }
+    }
+
+    #debug {
+        background: $alert-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #000;
+        }
+        &::before {
+            font-family: 'FontAwesome';
+            content: "\f188";
+        }
+    }
+
+    #deploy {
+        background: $success-color;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #000;
+        }
+        &::before {
+            font-family: 'FontAwesome';
+            content: "\f135";
+            transform: rotate(-45deg);
+        }
+    }
+
+    .top-bar {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 999;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        ul ul {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+    }
+
+    .off-canvas-content {
+        padding-top: 7em !important;
+    }
+
+    .page-title {
+        height: 50px;
+    }
+
+    // Top Bar Flex Fix
+.top-bar-right ul {
+    justify-content: flex-end;
+}
+
+
+// Work 
+.project {
+    h3 {
+        font-size: 24px;
+        span {
+            color: #999;
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1em;
+        }
+    }
+    .details {
+        span {
+            display: block;
+            margin-bottom: 1em;
+
+        }
+    }
+    @media screen and (min-width: 40em ) {
+    .details {
+        position: sticky !important;
+        height: 100%;
+        top: 6em !important;
+    }
+}
+    b {
+        color: #999;
+        font-size: 18px;
+    }
+}
+.featured-image {
+    max-height: 350px;
+    overflow: scroll;
+    &:hover {
+        overflow: scroll;
+    }
+    img {
+        overflow: scroll;
+        position: bottom;
+    }
+}
+.page-title {
+    margin-bottom: 5em;
+}
+.orbit-container {
+    max-height: 500px;
+    margin-bottom: 5em;
+}
